@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bistro Bliss</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #800020;
+      color: #333;
+    }
+
+    header {
+      background-color:#800020 ;
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #9C1A1A;
+      padding: 0.5em 0;
+    }
+
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    #hero {
+      text-align: center;
+      padding: 2em 1em;
+      background-color: #fff3e0;
+    }
+
+    #hero button {
+      padding: 0.7em 1.5em;
+      color: white;
+      background-color: #d32f2f;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    #menu, #gallery, #testimonials, #contact {
+      margin: 2em auto;
+      padding: 1em;
+      max-width: 900px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5em;
+    }
+
+    .menu-item img {
+      width: 100px;
+      height: 100px;
+      margin-right: 1em;
+      border-radius: 5px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1em;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .testimonial {
+      margin: 1em 0;
+      padding: 1em;
+      background: #fbe9e7;
+      border-left: 5px solid #d32f2f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em 0;
+      background: #d32f2f;
+      color: white;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bistro Bliss</h1>
+    <p>Where every bite tells a story.</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="hero">
+    <h2>Welcome to Bistro Bliss</h2>
+    <p>Experience the best culinary delights in town.</p>
+    <button onclick="window.location.href='#menu'">Explore Menu</button>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+      <img src="https://images.pexels.com/photos/30301983/pexels-photo-30301983/free-photo-of-delicious-pizza-in-red-box-with-basil-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pizza Margherita">
+      <div>
+        <h3>Pizza Margherita</h3>
+        <p>Classic pizza with fresh tomatoes, mozzarella, and basil.</p>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="https://images.pexels.com/photos/12918198/pexels-photo-12918198.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Spaghetti Carbonara">
+      <div>
+        <h3>Spaghetti </h3>
+        <p>Rich and creamy pasta with pancetta and Parmesan.</p>
+              </div>
+    </div>
+    <div class="menu-item">
+      <img src="https://images.pexels.com/photos/2116090/pexels-photo-2116090.jpeg?auto=compress&cs=tinysrgb&w=600" alt=" Salad">
+      <div>
+        <h3>Salad</h3>
+        <p>Crisp lettuce with Caesar dressing, croutons, and Parmesan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://images.pexels.com/photos/15029888/pexels-photo-15029888/free-photo-of-a-box-with-fried-chicken-in-it-and-a-dipping-sauce.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Crispy Chicken Wings">
+      <img src="https://media.istockphoto.com/id/943830930/photo/tomato-soup-in-a-white-bowl-isolated-on-a-white-background-gazpacho-soup-with-herbs-top-view.jpg?s=612x612&w=0&k=20&c=F7zmxwvBa841vPmr0bfAYjw9LXc3DLecb0Ule1Fzh9M=" alt="Creamy Tomato Basil Soup">
+      <img src="https://media.istockphoto.com/id/1411524598/photo/chicken-tikka-masala-cooked-marinated-chicken-in-spiced-curry-sauce.jpg?s=612x612&w=0&k=20&c=3JLbYigOnTQm-4exK-7uKeI3YoR0g9HxAkjxmuVmfpY=" alt="Butter Chicken">
+      <img src="https://media.istockphoto.com/id/123022785/photo/tiramisu.jpg?s=612x612&w=0&k=20&c=IZzNNayuKikv7pm_a-8fg6oKfuC1qH8C385g6oRSPEA=" alt="Tiramisu">
+    </div>
+  </section>
+
+  
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="response"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bistro Bliss. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      const response = `Thank you, ${name}! We will respond to your message at ${email} soon.`;
+      document.getElementById('response').textContent = response;
+
+      this.reset();
+    });
+  </script>
+</body>
+</html>
